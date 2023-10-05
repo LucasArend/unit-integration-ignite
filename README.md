@@ -1,20 +1,4 @@
 # Testes Unitários e Integração - Ignite
-
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=Unit&message=Tests&color=blueviolet&style=for-the-badge"/>
-  <img src="https://img.shields.io/github/license/MrRioja/unit-tests-ignite?color=blueviolet&logo=License&style=for-the-badge"/>
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MrRioja/unit-tests-ignite?color=blueviolet&logo=TypeScript&logoColor=white&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/MrRioja/unit-tests-ignite?color=blueviolet&style=for-the-badge">
-</p>
-<br>
-
-<p align="center">
-  <a href="#sobre">Sobre</a> •
-  <a href="#testes-unitários-e-integração">Testes Unitários e Integração</a> •
-  <a href="#instalação">Instalação</a> •
-  <a href="#tecnologias">Tecnologias</a> •
-</p>
-
 <br>
 
 ## Sobre
