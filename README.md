@@ -1,65 +1,65 @@
-# Testes Unitários e Integração - Ignite
+# Unit Testing and Integration - Ignite
 <br>
 
-## Sobre
+## About
 
-Desafio proposto durante a trilha de NodeJS no bootcamp Ignite da RocketSeat. Esse desafio foi proposto no quarto capitulo da trilha e seu objetivo foi consolidar os conhecimentos ensinados durante o modulo 4 do curso.
+Challenge proposed during the NodeJS track at RocketSeat's Ignite bootcamp. This challenge was proposed in the fourth chapter of the trail and its objective was to consolidate the knowledge taught during module 4 of the course.
 
-## Testes Unitários e Integração
+## Unit Testing and Integration
 
-No quarto modulo do bootcamp o assunto foi a escrita de testes unitários e de integração. Fomos desde a contextualização geral dos testes até suas estruturas e boas práticas.
+In the fourth module of the bootcamp the subject was writing unit and integration tests. We went from the general contextualization of tests to their structures and good practices.
 
-Para realizar os testes utilizamos uma API financeira desenvolvida em módulos anteriores, que contém as seguintes rotas:
+To carry out the tests we used a financial API developed in previous modules, which contains the following routes:
 
 <details>
   <summary>POST <code>/api/v1/users</code></summary>
   <br>
-  A rota recebe <code>name</code>, <code>email</code> e <code>password</code> dentro do corpo da requisição, salva o usuário criado no banco e retorna uma resposta vazia com status <code>201</code>.
+  The route receives <code>name</code>, <code>email</code> e <code>password</code> within the request body, saves the user created in the database and returns an empty response with status <code>201</code>.
 </details>
 
 <details>
   <summary>POST <code>/api/v1/sessions</code></summary>
   <br>
-  A rota recebe <code>email</code> e <code>password</code> no corpo da requisição e retorna os dados do usuário autenticado junto à um token JWT.
+  The route receives <code>email</code> e <code>password</code> in the body of the request and returns the authenticated user's data along with a JWT token.
   <br><br>
-  💡 Essa aplicação não possui refresh token, ou seja, o token criado dura apenas 1 dia e deve ser recriado após o período mencionado.
+  💡 This application does not have a refresh token, that is, the created token lasts only 1 day and must be recreated after the mentioned period.
 </details>
 
 <details>
   <summary>GET <code>/api/v1/profile</code></summary>
   <br>
-  A rota recebe um token JWT pelo header da requisição e retorna as informações do usuário autenticado.
+  The route receives a JWT token through the request header and returns the authenticated user information.
 </details>
 
 <details>
   <summary>GET <code>/api/v1/statements/balance</code></summary>
   <br>
-  A rota recebe um token JWT pelo header da requisição e retorna uma lista com todas as operações de depósito e saque do usuário autenticado e também o saldo total numa propriedade <code>balance</code>.
+  The route receives a JWT token through the request header and returns a list of all deposit and withdrawal operations from the authenticated user and also the total balance in a <code>balance</code> property
 </details>
 
 <details>
   <summary>POST <code>/api/v1/statements/deposit</code></summary>
   <br>
-  A rota recebe um token JWT pelo header e <code>amount</code> e <code>description</code> no corpo da requisição, registra a operação de depósito do valor e retorna as informações do depósito criado com status <code>201</code>.
+  The route receives a JWT token through the header and <code>amount</code> and <code>description</code> in the request body, registers the value deposit operation and returns the deposit information created with status <code> 201</code>.
 </details>
 
 <details>
   <summary>POST <code>/api/v1/statements/withdraw</code></summary>
   <br>
-  A rota recebe um token JWT pelo header e <code>amount</code> e <code>description</code> no corpo da requisição, registra a operação de saque do valor (caso o usuário possua saldo válido) e retorna as informações do saque criado com status <code>201</code>.
+  The route receives a JWT token through the header and <code>amount</code> and <code>description</code> in the body of the request, registers the withdrawal operation of the amount (if the user has a valid balance) and returns the information of the loot created with status <code>201</code>.
 </details>
 
 <details>
   <summary>GET <code>/api/v1/statements/:statement_id</code></summary>
   <br>
-  A rota recebe um token JWT pelo header e o id de uma operação registrada (saque ou depósito) na URL da rota e retorna as informações da operação encontrada.
+  The route receives a JWT token for the header and the id of a registered operation (withdrawal or deposit) in the route URL and returns the information of the found operation.
 </details>
 
-Por fim, deixo abaixo registrado o resultado da execução da bateria de testes implementada para a API:
+Finally, I record the results of the battery of tests implemented for the API below:
 
 ![Baterias de testes](readme/tests.png)
 
-## Instalação
+## Installation
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
