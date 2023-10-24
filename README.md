@@ -61,38 +61,40 @@ Finally, I record the results of the battery of tests implemented for the API be
 
 ## Installation
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+Before starting, you will need to have the following tools installed on your machine:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
-Além disso é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
+Also, it's good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
 ### 🎲 Rodando o Back End
 
+### 🎲 Running the Back End
+
 ```bash
-# Clone este repositório
+# Clone this repository
 $ git clone git@github.com:MrRioja/unit-tests-ignite.git
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd unit-tests-ignite
+# Access the project folder in terminal/cmd
+$ cd unit-integration-ignite
 
-# Instale as dependências
+# Install dependencies
 $ npm install
-# Caso prefira usar o Yarn execute o comando abaixo
-$ yarn
+# If you prefer to use Yarn, run the command below
+$yarn
 
-# Execute a aplicação em modo de desenvolvimento
+# Run the application in development mode
 $ npm run dev
-# Caso prefira usar o Yarn execute o comando abaixo
+# If you prefer to use Yarn, run the command below
 $ yarn dev
 
-# Executar os testes
+# Run the tests
 $ npm run test
-# Caso prefira usar o Yarn execute o comando abaixo
+# If you prefer to use Yarn, run the command below
 $ yarn test
 
-# O servidor inciará na porta 3333 ou na porta definida no arquivo .env na variável APP_PORT - acesse <http://localhost:3333>
+# The server will start on port 3333 or on the port defined in the .env file in the APP_PORT variable - access <http://localhost:3333>
 ```
 
-## Tecnologias
+## Technologies
 
 <img align="left" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="75" />
 
